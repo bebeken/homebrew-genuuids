@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function gen_uuids() {
+    for i in $(seq 1 $1) ; do
+        uuidgen | tr "[:upper:]" "[:lower:]"
+    done
+    return 0
+}
+
+if [[ "$1" =~ ^[0-9]+$ ]]; then
+    gen_uuids $1
+elif [ "$1" = "" ]; then
+    gen_uuids 1
+else
+    echo 'Please input number!!!'
+fi
