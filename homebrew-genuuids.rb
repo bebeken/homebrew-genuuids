@@ -1,4 +1,4 @@
-class HomebrewGenuuids < Formula
+class Genuuids < Formula
   desc ""
   homepage ""
   url "https://github.com/bebeken/homebrew-genuuids/archive/v1.0.tar.gz"
